@@ -1,6 +1,6 @@
 {
     "name": "stefan-eik-christiansen/block-javascript-shopware-6-plugin",
-    "description": "Block unwanted Javascript.",
+    "description": "Block unwanted Javascript from your Shopware 6 storefront.",
     "type": "shopware-platform-plugin",
     "version": "1.0.0",
     "license": "MIT",
