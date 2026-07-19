@@ -1,4 +1,4 @@
-# UxCart Block Javascript
+# Block unwanted Javascript from your Shopware 6 storefront.
 
 Increase pagespeed, block Javascript where unwanted.
 
