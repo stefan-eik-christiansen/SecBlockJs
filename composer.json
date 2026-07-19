@@ -1,0 +1,33 @@
+{
+    "name": "sec/block-js",
+    "description": "Block unwanted Javascript.",
+    "type": "shopware-platform-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Stefan Eik Christiansen",
+            "homepage": "https://uxcart.de/"
+        }
+    ],
+    "require": {
+        "shopware/core": "~6.6.0"
+    },
+    "extra": {
+        "shopware-plugin-class": "Sec\\SecBlockJs",
+        "plugin-icon": "src/Resources/config/sec-icon-shopware-plugin.png",
+        "label": {
+            "de-DE": "Blocker für unerwünschtes Javascript",
+            "en-GB": "Unwanted Javascript Blocker"
+        },
+        "description": {
+            "de-DE": "Blockiere ungewünschtes Javascript.",
+            "en-GB": "Block unwanted Javascript."
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Sec\\": "src/"
+        }
+    }
+}

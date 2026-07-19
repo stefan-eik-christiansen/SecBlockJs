@@ -1,0 +1,67 @@
+{% sw_extends '@Storefront/storefront/layout/meta.html.twig' %}
+
+{% block layout_head_javascript_hmr_mode %}
+    {% if isHMRMode %}
+        {% block layout_head_javascript_hmr_dev %}
+            {{ parent() }}
+        {% endblock %}
+    {% else %}
+        {% block layout_head_javascript_prod %}
+            <script>
+                window.themeJsPublicPath = '{{ asset('js/', 'theme') }}';
+            </script>
+
+            {% if activeRoute == 'frontend.home.page' %}
+                {# Startseite #}
+                {% set blockJs = ['swag-analytics'] %}
+            {% elseif activeRoute == 'frontend.detail.page' %}
+                {# Produktdetailseite #}
+                {% set blockJs = ['employee', 'filter', 'listing', 'quote', 'subscription'] %}
+            {% elseif activeRoute == 'frontend.landing.page' %}
+                {# Native Landingpage (Content > Shopping Experiences > Landingpages) #}
+                {% set blockJs = ['auto', 'buybox', 'checkout', 'employee', 'immersive', 'order', 'pay', 'quote', 'spatial', 'subscription'] %}
+            {% elseif activeRoute == 'frontend.navigation.page' %}
+                {% if page.header.navigation.active.type == 'landingpage' %}
+                    {# Kategorie, die als Landingpage gestaltet ist (eigenes Layout im Kategorie-Backend) #}
+                    {% set blockJs = ['auto', 'buybox', 'checkout', 'employee', 'immersive', 'order', 'pay', 'quote', 'spatial', 'subscription'] %}
+                {% elseif page.cmsPage.type == 'product_list' %}
+                    {# normale Kategorie-/Produktlistenseite #}
+                    {% set blockJs = ['auto', 'buybox', 'checkout', 'employee', 'immersive', 'order', 'pay', 'quote', 'spatial', 'subscription'] %}
+                {% else %}
+                    {# Fallback, z. B. Kategorie ohne CMS-Layout #}
+                    {% set blockJs = ['auto', 'buybox', 'checkout', 'employee', 'immersive', 'order', 'pay', 'quote', 'spatial', 'subscription'] %}
+                {% endif %}
+            {% elseif activeRoute == 'frontend.cms.page' %}
+                {# Frei erstellte Shop-Seite, keiner Kategorie zugeordnet (z. B. AGB, Über uns) #}
+                {% set blockJs = ['auto', 'buybox', 'checkout', 'employee', 'immersive', 'order', 'pay', 'quote', 'spatial', 'subscription'] %}
+            {% elseif "frontend.checkout" in activeRoute %}
+                {# Checkout-Prozess (Cart, Confirm, Finish, etc.) #}
+                {% set blockJs = ['buybox', 'employee', 'filter', 'immersive', 'quote', 'spatial', 'subscription'] %}
+            {% elseif "frontend.account" in activeRoute %}
+                {# Kundenkonto-Bereich #}
+                {% set blockJs = ['buybox', 'employee', 'filter', 'immersive', 'spatial', 'subscription'] %}
+            {% elseif "frontend.search" in activeRoute %}
+                {# Suchergebnisseite #}
+                {% set blockJs = ['auto', 'buybox', 'checkout', 'employee', 'immersive', 'order', 'pay', 'quote', 'spatial', 'subscription'] %}
+            {% else %}
+                {# Alles Übrige, z. B. Fehlerseiten, Newsletter, Wishlist etc. #}
+                {% set blockJs = ['auto', 'buybox', 'checkout', 'employee', 'immersive', 'order', 'pay', 'quote', 'spatial', 'subscription'] %}
+            {% endif %}
+
+            {% for script in theme_scripts() %}
+
+                {% set renderJs = true %}
+                {% for js in blockJs %}
+                    {% if js in script %}
+                        {% set renderJs = false %}
+                        {% break %}
+                    {% endif %}
+                {% endfor %}
+                
+                {% if renderJs == true %}
+                    <script type="text/javascript" src="{{ asset(script, 'theme') }}" defer></script>
+                {% endif %}
+            {% endfor %}
+        {% endblock %}
+    {% endif %}
+{% endblock %}
