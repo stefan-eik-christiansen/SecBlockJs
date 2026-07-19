@@ -1,0 +1,64 @@
+{
+    "sec-block-js": {
+        "general": {
+            "mainMenuItemGeneral": "Blocked Javascript",
+            "descriptionTextModule": "Manage the Javascript files blocked per route",
+            "buttonSave": "Save",
+            "titleSuccess": "Success",
+            "messageSaveSuccess": "The settings have been saved.",
+            "titleError": "Error",
+            "messageSaveError": "The settings could not be saved.",
+            "messageLoadError": "The settings could not be loaded."
+        },
+        "card": {
+            "title": "Blocked Javascript per route"
+        },
+        "fields": {
+            "home": {
+                "label": "Home page",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block on the home page."
+            },
+            "detail": {
+                "label": "Product detail page",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block on the product detail page."
+            },
+            "landing": {
+                "label": "Landing page",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block on native landing pages."
+            },
+            "navigation": {
+                "label": "Category / navigation page",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block on category and navigation pages (incl. category landing pages and product listings)."
+            },
+            "cms": {
+                "label": "Free CMS page",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block on freely created shop pages (e.g. terms, about us)."
+            },
+            "checkout": {
+                "label": "Checkout process",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block during checkout (cart, confirm, finish, etc.)."
+            },
+            "account": {
+                "label": "Customer account area",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block in the customer account area."
+            },
+            "search": {
+                "label": "Search results page",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block on the search results page."
+            },
+            "fallback": {
+                "label": "All other pages (fallback)",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Comma-separated list of script name fragments to block on all other pages (e.g. error pages, newsletter, wishlist)."
+            }
+        }
+    }
+}

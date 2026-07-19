@@ -1,0 +1,101 @@
+{% block sec_block_js_list %}
+<sw-page class="sec-block-js-list">
+
+    {% block sec_block_js_list_smart_bar_header %}
+    <template #smart-bar-header>
+        <h2>{{ $tc('sec-block-js.general.mainMenuItemGeneral') }}</h2>
+    </template>
+    {% endblock %}
+
+    {% block sec_block_js_list_smart_bar_actions %}
+    <template #smart-bar-actions>
+        <sw-button-process
+            :isLoading="isLoading"
+            variant="primary"
+            @click="onSave"
+        >
+            {{ $tc('sec-block-js.general.buttonSave') }}
+        </sw-button-process>
+    </template>
+    {% endblock %}
+
+    {% block sec_block_js_list_content %}
+    <template #content>
+        <sw-card-view>
+
+            {% block sec_block_js_list_card %}
+            <sw-card
+                :title="$tc('sec-block-js.card.title')"
+                :isLoading="isLoading"
+            >
+                <sw-text-field
+                    v-model:value="config.blockJsHome"
+                    :label="$tc('sec-block-js.fields.home.label')"
+                    :placeholder="$tc('sec-block-js.fields.home.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.home.helpText')"
+                />
+
+                <sw-text-field
+                    v-model:value="config.blockJsDetail"
+                    :label="$tc('sec-block-js.fields.detail.label')"
+                    :placeholder="$tc('sec-block-js.fields.detail.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.detail.helpText')"
+                />
+
+                <sw-text-field
+                    v-model:value="config.blockJsLanding"
+                    :label="$tc('sec-block-js.fields.landing.label')"
+                    :placeholder="$tc('sec-block-js.fields.landing.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.landing.helpText')"
+                />
+
+                <sw-text-field
+                    v-model:value="config.blockJsNavigation"
+                    :label="$tc('sec-block-js.fields.navigation.label')"
+                    :placeholder="$tc('sec-block-js.fields.navigation.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.navigation.helpText')"
+                />
+
+                <sw-text-field
+                    v-model:value="config.blockJsCms"
+                    :label="$tc('sec-block-js.fields.cms.label')"
+                    :placeholder="$tc('sec-block-js.fields.cms.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.cms.helpText')"
+                />
+
+                <sw-text-field
+                    v-model:value="config.blockJsCheckout"
+                    :label="$tc('sec-block-js.fields.checkout.label')"
+                    :placeholder="$tc('sec-block-js.fields.checkout.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.checkout.helpText')"
+                />
+
+                <sw-text-field
+                    v-model:value="config.blockJsAccount"
+                    :label="$tc('sec-block-js.fields.account.label')"
+                    :placeholder="$tc('sec-block-js.fields.account.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.account.helpText')"
+                />
+
+                <sw-text-field
+                    v-model:value="config.blockJsSearch"
+                    :label="$tc('sec-block-js.fields.search.label')"
+                    :placeholder="$tc('sec-block-js.fields.search.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.search.helpText')"
+                />
+
+                <sw-text-field
+                    v-model:value="config.blockJsFallback"
+                    :label="$tc('sec-block-js.fields.fallback.label')"
+                    :placeholder="$tc('sec-block-js.fields.fallback.placeholder')"
+                    :helpText="$tc('sec-block-js.fields.fallback.helpText')"
+                />
+            </sw-card>
+            {% endblock %}
+
+        </sw-card-view>
+    </template>
+    {% endblock %}
+
+</sw-page>
+{% endblock %}

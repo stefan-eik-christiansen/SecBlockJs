@@ -1,0 +1,64 @@
+{
+    "sec-block-js": {
+        "general": {
+            "mainMenuItemGeneral": "Blockierte Javascripte",
+            "descriptionTextModule": "Verwaltung der pro Route blockierten Javascript-Dateien",
+            "buttonSave": "Speichern",
+            "titleSuccess": "Erfolg",
+            "messageSaveSuccess": "Die Einstellungen wurden gespeichert.",
+            "titleError": "Fehler",
+            "messageSaveError": "Die Einstellungen konnten nicht gespeichert werden.",
+            "messageLoadError": "Die Einstellungen konnten nicht geladen werden."
+        },
+        "card": {
+            "title": "Blockierte Javascripte pro Route"
+        },
+        "fields": {
+            "home": {
+                "label": "Startseite",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf der Startseite blockiert werden sollen."
+            },
+            "detail": {
+                "label": "Produktdetailseite",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf der Produktdetailseite blockiert werden sollen."
+            },
+            "landing": {
+                "label": "Native Landingpage",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf nativen Landingpages blockiert werden sollen."
+            },
+            "navigation": {
+                "label": "Kategorie- / Navigationsseite",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf Kategorie- und Navigationsseiten blockiert werden sollen (inkl. Kategorie-Landingpages und Produktlisten)."
+            },
+            "cms": {
+                "label": "Frei erstellte Shopseite",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf frei erstellten Shopseiten (z. B. AGB, Über uns) blockiert werden sollen."
+            },
+            "checkout": {
+                "label": "Checkout-Prozess",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die im Checkout-Prozess (Cart, Confirm, Finish etc.) blockiert werden sollen."
+            },
+            "account": {
+                "label": "Kundenkonto-Bereich",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die im Kundenkonto-Bereich blockiert werden sollen."
+            },
+            "search": {
+                "label": "Suchergebnisseite",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf der Suchergebnisseite blockiert werden sollen."
+            },
+            "fallback": {
+                "label": "Alle übrigen Seiten (Fallback)",
+                "placeholder": "swag-analytics, subscription",
+                "helpText": "Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf allen übrigen Seiten (z. B. Fehlerseiten, Newsletter, Wunschliste) blockiert werden sollen."
+            }
+        }
+    }
+}
