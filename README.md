@@ -2,7 +2,14 @@
 
 Increase pagespeed, block Javascript where unwanted.
 
-## Usage
+
+## Add to Shopware
+
+Add to composer.json using  
+`composer require /stefan-eik-christiansen/block-javascript-shopware-6-plugin`
+
+
+## Instructions
 
 Keep it the 1st after 'Storefront' in themes.json to allow 3rd party plugins further extension of the meta.html.twig's Javascript block.
 
