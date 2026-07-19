@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.2] - 2026-07-19
+
+_Add: compatability notice to readme._  
+
 ## [1.2.1] - 2026-07-19
 
 _Fix: sw-text-field used `v-model` instead of `v-model:value`, which caused

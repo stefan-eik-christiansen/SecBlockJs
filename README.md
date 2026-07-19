@@ -11,7 +11,8 @@ Add to composer.json using
 
 ## Instructions
 
+**Compatible with onprem and PaaS**  
 Keep it the 1st after 'Storefront' in themes.json to allow 3rd party plugins further extension of the meta.html.twig's Javascript block.
 
-Find the plugin's settings in the admin, within "Extensions / My Extensions".  
+Find the plugin's settings in the admin, within "Settings / Extensions / My Extensions".  
 Add the string matching the Javascript you want to block to the input field referring the route you want it to be blocked in.
