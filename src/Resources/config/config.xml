@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/System/SystemConfig/Schema/config.xsd">
+
+    <card>
+        <title>Block Javascript</title>
+        <title lang="de-DE">Block Javascript</title>
+
+        <input-field type="text">
+            <name>blockJsHome</name>
+            <label>Home page</label>
+            <label lang="de-DE">Startseite</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block on the home page.</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf der Startseite blockiert werden sollen.</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>blockJsDetail</name>
+            <label>Product detail page</label>
+            <label lang="de-DE">Produktdetailseite</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block on the product detail page.</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf der Produktdetailseite blockiert werden sollen.</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>blockJsLanding</name>
+            <label>Landing page</label>
+            <label lang="de-DE">Native Landingpage</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block on native landing pages.</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf nativen Landingpages blockiert werden sollen.</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>blockJsNavigation</name>
+            <label>Category / navigation page</label>
+            <label lang="de-DE">Kategorie- / Navigationsseite</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block on category and navigation pages (incl. category landing pages and product listings).</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf Kategorie- und Navigationsseiten blockiert werden sollen (inkl. Kategorie-Landingpages und Produktlisten).</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>blockJsCms</name>
+            <label>Free CMS page</label>
+            <label lang="de-DE">Frei erstellte Shopseite</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block on freely created shop pages (e.g. AGB, about us).</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf frei erstellten Shopseiten (z. B. AGB, Über uns) blockiert werden sollen.</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>blockJsCheckout</name>
+            <label>Checkout process</label>
+            <label lang="de-DE">Checkout-Prozess</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block during checkout (cart, confirm, finish, etc.).</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die im Checkout-Prozess (Cart, Confirm, Finish etc.) blockiert werden sollen.</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>blockJsAccount</name>
+            <label>Customer account area</label>
+            <label lang="de-DE">Kundenkonto-Bereich</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block in the customer account area.</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die im Kundenkonto-Bereich blockiert werden sollen.</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>blockJsSearch</name>
+            <label>Search results page</label>
+            <label lang="de-DE">Suchergebnisseite</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block on the search results page.</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf der Suchergebnisseite blockiert werden sollen.</helpText>
+        </input-field>
+
+        <input-field type="text">
+            <name>blockJsFallback</name>
+            <label>All other pages (fallback)</label>
+            <label lang="de-DE">Alle übrigen Seiten (Fallback)</label>
+            <placeholder>swag-analytics, subscription</placeholder>
+            <helpText>Comma-separated list of script name fragments to block on all other pages (e.g. error pages, newsletter, wishlist).</helpText>
+            <helpText lang="de-DE">Kommagetrennte Liste von Skriptnamen-Fragmenten, die auf allen übrigen Seiten (z. B. Fehlerseiten, Newsletter, Wunschliste) blockiert werden sollen.</helpText>
+        </input-field>
+
+    </card>
+</config>
