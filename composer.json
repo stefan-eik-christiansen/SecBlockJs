@@ -1,5 +1,5 @@
 {
-    "name": "sec/block-js",
+    "name": "stefan-eik-christiansen/block-javascript-shopware-6-plugin",
     "description": "Block unwanted Javascript.",
     "type": "shopware-platform-plugin",
     "version": "1.0.0",
