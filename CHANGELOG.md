@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.3] - 2026-07-23
+
+_Fix: dump causing an error in production env._
+
 ## [1.2.2] - 2026-07-19
 
 _Add: compatability notice to readme._  

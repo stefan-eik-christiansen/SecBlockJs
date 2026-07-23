@@ -49,9 +49,6 @@
                 {% set blockJs = config('SecBlockJs.config.blockJsFallback')|sec_block_js_list %}
             {% endif %}
 
-            <script type="txt/dump">
-                {{ dump(blockJs) }}
-            </script>
             {% for script in theme_scripts() %}
                 {% set renderJs = true %}
                 {% for js in blockJs %}
